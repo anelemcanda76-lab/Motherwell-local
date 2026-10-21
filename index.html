@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Motherwell Local</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:sans-serif}
+body{background:#f5f7fb}:root{--blue:#0a68d1;--dark:#0a2342;--yellow:#ffcc00}
+#welcome{position:fixed;inset:0;z-index:999;background:linear-gradient(180deg,#0a7de8 0%,#0a68d1 55%,#0a2342 100%);display:flex;flex-direction:column;align-items:center;justify-content:center;padding:30px;text-align:center}
+#welcome::after{content:'';position:absolute;bottom:0;left:0;width:100%;height:45%;background:#0a2342;clip-path:polygon(0 30%,100% 0,100% 100%,0 100%);z-index:-1}
+.logo-pin{width:110px;height:110px;background:var(--yellow);border-radius:50% 50% 50% 50% / 60% 60% 40% 40%;display:flex;align-items:center;justify-content:center;font-size:40px;margin-bottom:20px}
+h1.main-title{color:#fff;font-size:36px;font-weight:700;line-height:1.1}
+h1.main-title span.script{color:var(--yellow);font-size:42px;display:block;font-style:italic}
+.sub{color:#e0e9f5;margin:20px 0 30px;font-size:15px}
+.btn{width:100%;max-width:360px;padding:16px;border-radius:30px;border:none;font-weight:700;font-size:17px;cursor:pointer;margin-bottom:14px}
+.btn-yellow{background:var(--yellow);color:#1a1a1a}.btn-white{background:#fff;color:#1a1a1a}
+.btn-dark{background:rgba(255,255,255,0.12);color:#fff;border:1px solid rgba(255,255,255,0.3)}
+#app{display:none;min-height:100vh;background:#fff}
+.topbar{background:var(--blue);color:#fff;padding:14px 16px;display:flex;align-items:center;justify-content:space-between}
+.search-wrap{padding:14px 16px}.search{width:100%;padding:14px 16px;border-radius:16px;border:1px solid #e2e8f0;outline:none}
+.banner{margin:0 16px;background:linear-gradient(135deg,#0a2342,#0a4a8a);border-radius:18px;padding:18px 20px;color:#fff}
+.cat-head{display:flex;justify-content:space-between;align-items:center;padding:18px 16px 10px}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;padding:0 12px}
+.cat{text-align:center;cursor:pointer}.cat-icon{width:56px;height:56px;margin:0 auto 6px;border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:22px}
+.cat span{font-size:11px;font-weight:600;color:#1e293b;display:block}
+.bg-blue{background:#e6f0ff}.bg-pink{background:#fde6f3}.bg-yellow{background:#fff3d1}.bg-light{background:#f1f5f9
